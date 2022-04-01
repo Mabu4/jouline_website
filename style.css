@@ -684,9 +684,19 @@ body {
     font-size: 1.25rem;
 }
 
+.navbar_impressum {
+    padding-bottom: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
 .impressum_navbar-link {
     font-weight: 500;
     font-size: 1.4rem;
+}
+
+.logo_impressum {
+    width: 3rem;
+    height: 3rem;
 }
 
 @media (max-width: 48em) {
