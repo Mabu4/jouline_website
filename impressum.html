@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="navbar.html"></div>
+    <div class="primary-container">
+        <h1>Impressum</h1>
+        <p>Angaben gemäß § 5 TMG</p>
+        <p>Max Muster <br>
+            Musterweg<br>
+            12345 Musterstadt <br> </p>
+        <p> <b>Vertreten durch: </b><br>
+            Max Muster<br></p>
+        <p><b>Kontakt:</b> <br>
+            Telefon: 01234-789456<br>
+            E-Mail: <a href='mailto:max@muster.de'>max@muster.de</a></br></p>
+        Impressum vom <a href="https://www.impressum-generator.de">Impressum Generator</a>
+    </div>
+    <div w3-include-html="datenschutzerklaerung.html"></div>
+    <div w3-include-html="footer.html"></div>
+</body>
+
+</html>
