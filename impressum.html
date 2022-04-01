@@ -1,30 +1,42 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/navigation.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Impressum</title>
 </head>
-
-<body onload="includeHTML()">
-    <div w3-include-html="navbar.html"></div>
-    <div class="primary-container">
-        <h1>Impressum</h1>
-        <p>Angaben gemäß § 5 TMG</p>
-        <p>Max Muster <br>
-            Musterweg<br>
-            12345 Musterstadt <br> </p>
-        <p> <b>Vertreten durch: </b><br>
-            Max Muster<br></p>
-        <p><b>Kontakt:</b> <br>
-            Telefon: 01234-789456<br>
-            E-Mail: <a href='mailto:max@muster.de'>max@muster.de</a></br></p>
-        Impressum vom <a href="https://www.impressum-generator.de">Impressum Generator</a>
+<body>
+    <div class="img-container">
+        <img class="header_logo" src="./images/Logo1.png" alt="Logo">
     </div>
-    <div w3-include-html="datenschutzerklaerung.html"></div>
-    <div w3-include-html="footer.html"></div>
+    <div class="header_navbar navbar_impressum">
+        <ul class="header_ul navbar_ul_impressum">
+            <li class="header_li">
+                <a class="header_link header_link-normal impressum_navbar-link" href="index.html#about">about</a>
+            </li>
+            <li class="header_li">
+                <a class="header_link header_link-normal impressum_navbar-link" href="index.html#main">Paintings</a>
+            </li>
+            <li class="header_li">
+                <a class="header_link header_link-normal impressum_navbar-link" href="index.html#subscribe">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="impressum-content">
+        <div class="impressum-content-inner">
+            <h1>Impressum</h1>
+            <p>Angaben gemäß § 5 TMG</p>
+            <p>Jouline-Chiara Cutner <br>
+                Buchenweg 44<br>
+                38550 Isenbüttel <br> </p>
+            <p> <b>Vertreten durch: </b><br>
+                Jouline Cutner<br></p>
+            <p><b>Kontakt:</b> <br>
+                Telefon: 015222950883<br>
+                E-Mail: <a href='mailto:info@jouline-cutner.de'>info@jouline-cutner.de</a></br></p>
+        </div>
+    </div>
 </body>
-
 </html>

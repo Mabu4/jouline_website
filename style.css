@@ -662,3 +662,42 @@ body {
         padding-top: 2rem;
     }
 }
+
+/*------ Impressum -------*/
+
+.impressum-content {
+    padding-top: 10rem;
+    max-width: 30rem;
+    min-width: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.impressum-content-inner {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: #505050da;
+}
+
+.impressum-content-inner p {
+    font-size: 1.25rem;
+}
+
+.impressum_navbar-link {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 48em) {
+    .navbar_impressum {
+        display: flex;
+    }
+    .impressum_navbar-link {
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+    .impressum-content-inner p {
+        font-size: 1rem;
+    }
+}
