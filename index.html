@@ -1,154 +1,360 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jouline Cutner</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body onload="slideshow()">
     <header class="header">
-        <div class="primary-container">
-            <div class="img-container">
-                <img class="header_logo" src="./images/Logo1.png" alt="Logo">
-            </div>
-            <div class="header_navbar">
-                <ul class="header_ul">
-                    <li class="header_li">
-                        <a class="header_link header_link-normal" href="#about">about</a>
-                    </li>
-                    <li class="header_li">
-                        <a class="header_link header_link-normal" href="#main">Paintings</a>
-                    </li>
-                    <li class="header_li">
-                        <a class="header_link header_link-normal" href="#subscribe">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header_heading">
-                <img class="header_heading-image" src="./images/header.png">
-            </div>
+      <div class="primary-container">
+        <div class="header_navbar">
+          <ul class="header_ul">
+            <li class="header_li">
+              <a class="header_link header_link-normal" href="#about"
+                >Über mich</a
+              >
+            </li>
+            <li class="header_li">
+              <a class="header_link header_link-normal" href="#main">Bilder</a>
+            </li>
+            <li class="header_li">
+              <a class="header_link header_link-normal" href="#subscribe"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
         </div>
+        <div class="header_heading">
+          <div class="header_heading-image-box">
+            <img class="header_heading-image" src="./images/Logo3.png" />
+            <h3>Kunst, die von Herzen kommt</h3>
+          </div>
+        </div>
+      </div>
     </header>
     <div class="main" id="main">
-        <div class="main_cards">
-            <div class="main_cards-single">
-                <img src="./images/individual.jpg" alt="individual Painting" class="main_cards-img">
-                <div class="main_cards-content">
-                    <hr class="header_line-3">
-                    <p>Art according to your individual wishes</p>
-                    <a class="primary-button" href="#subscribe">Contact</a>
-                </div>
-            </div>
-            <div class="main_cards-single">
-                <img src="./images/individual1.jpg" alt="own Art" class="main_cards-img main_cards-img-2">
-                <div class="main_cards-content">
-                    <hr class="header_line-3">
-                    <p>Art based on my inspiration</p>
-                    <a class="primary-button" href="#subscribe">Contact</a>
-                </div>
-            </div>
+      <div class="main_cards">
+        <div class="main_cards-single">
+          <img
+            src="./images/individual.jpg"
+            alt="individual Painting"
+            class="main_cards-img"
+          />
+          <div class="main_cards-content">
+            <hr class="header_line-3" />
+            <p>Auftragsarbeiten</p>
+            <a class="primary-button" href="#subscribe">Kontakt</a>
+          </div>
         </div>
+        <div class="main_cards-single">
+          <img
+            src="./images/individual1.jpg"
+            alt="own Art"
+            class="main_cards-img main_cards-img-2"
+          />
+          <div class="main_cards-content">
+            <hr class="header_line-3" />
+            <p>Bestehende Werke erwerben</p>
+            <a class="primary-button" href="#subscribe">Kontakt</a>
+          </div>
+        </div>
+      </div>
+      <div class="main_cards main_cards-1">
+        <div class="main_cards-single">
+          <img
+            src="./images/holz.jpg"
+            alt="individual Painting"
+            class="main_cards-img"
+          />
+          <div class="main_cards-content">
+            <hr class="header_line-3" />
+            <p>Holzarbeiten</p>
+            <a class="primary-button" href="#subscribe">Kontakt</a>
+          </div>
+        </div>
+        <div class="main_cards-single">
+          <!-- Image Slider Start -->
+          <div class="slider">
+            <div class="slides">
+              <!-- Radio Button Start  -->
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <input type="radio" name="radio-btn" id="radio4" />
+              <input type="radio" name="radio-btn" id="radio5" />
+              <input type="radio" name="radio-btn" id="radio6" />
+              <input type="radio" name="radio-btn" id="radio7" />
+              <input type="radio" name="radio-btn" id="radio8" />
+              <input type="radio" name="radio-btn" id="radio9" />
+              <input type="radio" name="radio-btn" id="radio10" />
+              <input type="radio" name="radio-btn" id="radio11" />
+              <!-- Radio Button Close  -->
+
+              <!-- Slide Image Start -->
+              <div class="slide first">
+                <img src="./images/seele2.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele2.1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele3.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele3.1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele5.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele4.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele4.1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele4.2.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele4.1.jpg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="./images/seele6.jpg" alt="" />
+              </div>
+              <!-- Slide Image Close -->
+              <!-- Automatic Navigation Start -->
+              <div class="navigation-auto">
+                <div class="auto-btn-1"></div>
+                <div class="auto-btn-2"></div>
+                <div class="auto-btn-3"></div>
+                <div class="auto-btn-4"></div>
+                <div class="auto-btn-5"></div>
+                <div class="auto-btn-6"></div>
+                <div class="auto-btn-7"></div>
+                <div class="auto-btn-8"></div>
+                <div class="auto-btn-9"></div>
+                <div class="auto-btn-10"></div>
+                <div class="auto-btn-11"></div>
+              </div>
+              <!-- Automatic Navigation Close -->
+            </div>
+            <!-- Mannual Navigation Start -->
+            <div class="navigation-mannual">
+              <label for="radio1" class="mannual-btn"></label>
+              <label for="radio2" class="mannual-btn"></label>
+              <label for="radio3" class="mannual-btn"></label>
+              <label for="radio4" class="mannual-btn"></label>
+              <label for="radio5" class="mannual-btn"></label>
+              <label for="radio6" class="mannual-btn"></label>
+              <label for="radio7" class="mannual-btn"></label>
+              <label for="radio8" class="mannual-btn"></label>
+              <label for="radio9" class="mannual-btn"></label>
+              <label for="radio10" class="mannual-btn"></label>
+              <label for="radio11" class="mannual-btn"></label>
+            </div>
+            <!-- Mannual Navigation Close -->
+          </div>
+          <div class="main_cards-content">
+            <hr class="header_line-3" />
+            <p>Seelenportraits</p>
+            <a class="primary-button" onclick="showInfo()">Info</a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="shop">
-        <h2 class="shop_header">MY Inspiration</h2>
-        <hr class="header_line-4">
-        <div class="shop_cards">
-            <div class="shop_cards-single">
-                <img class="shop_cards-image" src="./images/blätter1.jpg" alt="">
-                <div class="shop_cards-content">
-                    <hr class="header_line-3">
-                    <h3 class="shop_cards-content-heading">Nature's Diversity</h3>
-                    <a onclick="showImage(0)" class="primary-button">Product</a>
-                </div>
-            </div>
-            <div class="shop_cards-single">
-                <img class="shop_cards-image" src="./images/tucan1.jpg" alt="">
-                <div class="shop_cards-content">
-                    <hr class="header_line-3">
-                    <h3 class="shop_cards-content-heading">Through The Eyes Of The Rainforest</h3>
-                    <a onclick="showImage(1)" class="primary-button">Product</a>
-                </div>
-            </div>
-            <div class="shop_cards-single">
-                <img class="shop_cards-image" src="./images/quallen.jpg" alt="">
-                <div class="shop_cards-content">
-                    <hr class="header_line-3">
-                    <h3 class="shop_cards-content-heading">Enlightment Of The Darkness</h3>
-                    <a onclick="showImage(2)" class="primary-button">Product</a>
-                </div>
-            </div>
+      <h2 class="shop_header">Meine Werke</h2>
+      <hr class="header_line-4" />
+      <div class="shop_cards">
+        <div class="shop_cards-single">
+          <img class="shop_cards-image" src="./images/blätter1.jpg" alt="" />
+          <div class="shop_cards-content">
+            <hr class="header_line-3" />
+            <h3 class="shop_cards-content-heading">Nature's Diversity</h3>
+            <a onclick="showImage(0)" class="primary-button">Produkt</a>
+          </div>
         </div>
-        <div class="shop_view-box d-none" id="shop_view-box">
-        
+        <div class="shop_cards-single">
+          <img class="shop_cards-image" src="./images/tucan1.jpg" alt="" />
+          <div class="shop_cards-content">
+            <hr class="header_line-3" />
+            <h3 class="shop_cards-content-heading">
+              Through The Eyes Of The Rainforest
+            </h3>
+            <a onclick="showImage(1)" class="primary-button">Produkt</a>
+          </div>
         </div>
+        <div class="shop_cards-single">
+          <img class="shop_cards-image" src="./images/quallen.jpg" alt="" />
+          <div class="shop_cards-content">
+            <hr class="header_line-3" />
+            <h3 class="shop_cards-content-heading">
+              Enlightment Of The Darkness
+            </h3>
+            <a onclick="showImage(2)" class="primary-button">Produkt</a>
+          </div>
+        </div>
+        <div class="shop_cards-single">
+          <img class="shop_cards-image" src="./images/bubble1.jpg" alt="" />
+          <div class="shop_cards-content">
+            <hr class="header_line-3" />
+            <h3 class="shop_cards-content-heading">Soap Bubble Hearts</h3>
+            <a onclick="showImage(3)" class="primary-button">Produkt</a>
+          </div>
+        </div>
+        <div class="shop_cards-single">
+          <img class="shop_cards-image" src="./images/abstrakt.jpg" alt="" />
+          <div class="shop_cards-content">
+            <hr class="header_line-3" />
+            <h3 class="shop_cards-content-heading">Chaotic Mind</h3>
+            <a onclick="showImage(4)" class="primary-button">Produkt</a>
+          </div>
+        </div>
+        <div class="shop_cards-single">
+          <img class="shop_cards-image" src="./images/reh1.jpg" alt="" />
+          <div class="shop_cards-content">
+            <hr class="header_line-3" />
+            <h3 class="shop_cards-content-heading">Golden Hour of Strength</h3>
+            <a onclick="showImage(5)" class="primary-button">Produkt</a>
+          </div>
+        </div>
+        <div class="shop_cards-single">
+          <img class="shop_cards-image" src="./images/fisch1.jpg" alt="" />
+          <div class="shop_cards-content">
+            <hr class="header_line-3" />
+            <h3 class="shop_cards-content-heading">Kämpfernatur</h3>
+            <a onclick="showImage(6)" class="primary-button">Produkt</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop_view-box d-none" id="shop_view-box"></div>
     </div>
     <div class="about" id="about">
-        <div class="about_img-container">
-            <img class="about_img" src="./images/about2.jpg" alt="Artist thinking">
-        </div>
-        <div class="about_content">
-            <h2 class="about_content-header">
-                About
-            </h2>
-            <hr class="header_line-4">
-            <p class="about_content-text">
-                My name is Jouline and I am a German artist who specialises in working with acrylic paints. 
-                I love bringing to the canvas what comes to my mind intuitively. I try to express myself in a versatile
-                and unique way, therefore I wouldn't assign my art to any particular category. Each of my paintings
-                is painted with a lot of heart and passion. Through art I feel connected to my true self and my soul. 
-                I am convinced that every human being has his own place in this world and that this gives us a 
-                chance to create a world full of peace and love. 
-            </p>
-            <img class="about_logo" src="./images/Logo1.png">
-        </div>
+      <div class="about_img-container">
+        <img
+          class="about_img"
+          src="./images/about2.jpg"
+          alt="Artist thinking"
+        />
+      </div>
+      <div class="about_content">
+        <h2 class="about_content-header">Über mich</h2>
+        <hr class="header_line-4" />
+        <p class="about_content-text">
+          Hallo, ich heiße Jouline und habe bereits im jungen Alter die
+          Acrylmalerei für mich entdecken dürfen. Dabei habe ich recht schnell
+          besondere Freude für das Portraitieren von Mensch & Tier, sowie die
+          intuitive Malerei empfunden. Ich liebe es genau das auf die Leinwand
+          zu bringen, was mir in den Sinn kommt und was sich für mich stimmig
+          anfühlt. Einer bestimmten Kategorie würde ich meine Kunst jedoch nicht
+          zuordnen, da ich gerne mit verschiedenen Techniken und Stilen
+          experimentiere. Jedes meiner Bilder ist ein Unikat, welches ich mit
+          viel Liebe und Leidenschaft erschaffen habe. Die Kunst bietet mir so
+          die Möglichkeit mich jeden Tag aufs Neue mit meinem Herzen und meiner
+          Seele zu verbinden, wofür ich sehr dankbar bin. Ich bin davon
+          überzeugt, dass es für jeden Menschen einen eigenen Platz in dieser
+          Welt gibt, an dem er ganz in seine Kraft kommen kann und so dabei
+          mithilft eine Welt voller Frieden und Harmonie zu gestalten. Schau
+          doch gerne auf meinem Telegramkanal "Herzenskunst" vorbei.
+        </p>
+      </div>
     </div>
     <div class="subscribe">
-        <h2 class="subscribe_header" id="subscribe">Contact</h2>
-        <div class="subscribe_formular-container">
-            <form name="form" action="http://access902359617.webspace-data.io/Portfolio%20new/Jouline%20Cutner/send_mail/send_mail.php" method="post" onsubmit="return validateForm()" required>
-                <div class="subscribe_formular-checkbox-container">
-                    <div class="subscribe_formular-input-container-checkbox">
-                        <label for="individual">Individual art</label>
-                        <input class="subscribe_formular-input-checkbox" type="checkbox" name="individual">
-                    </div>
-                    <div class="subscribe_formular-input-container-checkbox">
-                        <label for="individual">Joulines gallery</label>
-                        <input class="subscribe_formular-input-checkbox" type="checkbox" name="Normal">
-                    </div>
-                </div>
+      <h2 class="subscribe_header" id="subscribe">Kontakt</h2>
+      <div class="subscribe_formular-container">
+        <form
+          name="form"
+          action="./send_mail/send_mail.php"
+          method="post"
+          onsubmit="return validateForm()"
+          required
+        >
+          <div class="subscribe_formular-checkbox-container">
+            <div class="subscribe_formular-input-container-checkbox">
+              <label for="individual">Individual art</label>
+              <input
+                class="subscribe_formular-input-checkbox"
+                type="checkbox"
+                name="individual"
+              />
+            </div>
+            <div class="subscribe_formular-input-container-checkbox">
+              <label for="individual">Joulines gallery</label>
+              <input
+                class="subscribe_formular-input-checkbox"
+                type="checkbox"
+                name="Normal"
+              />
+            </div>
+          </div>
 
-                <div class="subscribe_formular-input-container">
-                    <input class="subscribe_formular-input" type="text" name="name" placeholder="Name">
-                </div>
-                <div class="subscribe_formular-input-container">
-                    <input class="subscribe_formular-input" type="email" name="email" placeholder="Email">
-                </div>
-                <div class="subscribe_formular-input-container">
-                    <input class="subscribe_formular-input subscribe_formular-input-message" name="text" type="text" placeholder="Your message">
-                </div>
-                <div class="subscribe_formular-button-container">
-                    <button class="subscribe_formular-button" type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
+          <div class="subscribe_formular-input-container">
+            <input
+              class="subscribe_formular-input"
+              type="text"
+              name="name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="subscribe_formular-input-container">
+            <input
+              class="subscribe_formular-input"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="subscribe_formular-input-container">
+            <input
+              class="subscribe_formular-input subscribe_formular-input-message"
+              name="text"
+              type="text"
+              placeholder="Deine Nachricht"
+            />
+          </div>
+          <div class="subscribe_formular-button-container">
+            <button class="subscribe_formular-button" type="submit">
+              Senden
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
     <footer>
-        <div class="footer_container">
-            <div class="footer_copyright">© 2022 Jouline Cutner</div>
-            <div class="footer_links-container">
-                <a class="footer_links" href="#about">About</a>
-                <a class="footer_links" href="#">Paintings</a>
-                <a class="footer_links" href="#subscribe">Contact</a>
-                <a class="footer_links" href="impressum.html">Impressum</a>
-            </div>
+      <div class="footer_container">
+        <div class="footer_copyright">© 2023 Jouline Cutner</div>
+        <div class="footer_links-container">
+          <a class="footer_links" href="#about">Über mich</a>
+          <a class="footer_links" href="#">Bilder</a>
+          <a class="footer_links" href="#subscribe">Kontakt</a>
+          <a class="footer_links" href="impressum.html">Impressum</a>
         </div>
+      </div>
     </footer>
-    
-</body>
+    <script>
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+
+        if (counter > 11) {
+          counter = 1;
+        }
+      }, 5000);
+    </script>
+  </body>
 </html>
